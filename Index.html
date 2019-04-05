@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="brand">
+          <a href="from.html">WANDERLUST</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="portfolio-items-wrapper">
+
+        <div class="portfolio-item-wrapper">
+          <a href="https://en.parisinfo.com/"><div class="portfolio-img-background" style="background-image:url(paris.jpg)"></div></a>
+
+          <div class="img-text-wrapper">
+        
+
+            <div class="subtitle">Paris, Italy</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <a href="https://en.parisinfo.com/"><div class="portfolio-img-background" style="background-image:url(room1.jpg)"></div></a>
+          <div class="img-text-wrapper">
+     
+
+            <div class="subtitle">Luxurious Hotels</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <a href="https://en.parisinfo.com/"><div class="portfolio-img-background" style="background-image:url(pizza.jpg)"></div></a>
+          <div class="img-text-wrapper">
+
+            <div class="subtitle">Pizza</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <a href="https://www.visitbritain.com/in/en"><div class="portfolio-img-background" style="background-image:url(bigben.jpg)"></div></a>
+          <div class="img-text-wrapper">
+        
+
+            <div class="subtitle">Big Ben, United Kingdom</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <a href="https://www.visitbritain.com/in/en"><div class="portfolio-img-background" style="background-image:url(room2.jpg)"></div></a>
+          <div class="img-text-wrapper">
+       
+
+            <div class="subtitle">Live like a Englishman.</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <a href="https://www.visitbritain.com/in/en"><div class="portfolio-img-background" style="background-image:url(doughnuts.jpg)"></div></a>
+          <div class="img-text-wrapper">
+    
+
+            <div class="subtitle">Doughnuts</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <a href="https://www.tourism-of-india.com/"><div class="portfolio-img-background" style="background-image:url(tajmahal.jpg)"></div></a>
+          <div class="img-text-wrapper">
+          
+
+            <div class="subtitle">Taj Mahal, India</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <a href="https://www.tourism-of-india.com/"><div class="portfolio-img-background" style="background-image:url(room3.jpg)"></div></a>
+          <div class="img-text-wrapper">
+       
+
+            <div class="subtitle">Live like a king in these hotels</div>
+          </div>
+        </div>
+
+        <div class="portfolio-item-wrapper">
+          <a href="https://www.tourism-of-india.com/"><div class="portfolio-img-background" style="background-image:url(thali.jpg)"></div></a>
+          <div class="img-text-wrapper">
+       
+            <div class="subtitle">The Indian Thali</div>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+</script>
+
+</html>

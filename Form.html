@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link  rel=stylesheet href = "formstyle.css">
+    <script src = "/formvalidate.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <!--<div style="background-color:lightblue">-->
+    <header>
+      <h1>Registration Form</h1>
+
+    </header>
+    <br>
+  <!--</div>-->
+    <footer>
+
+    </footer>
+    <section id = "section">
+      <Form class = "form" name="myForm" action="Index.html">
+        <fieldset>
+          <legend><b>Personal Information</b></legend><br>
+          <span id = "fname">First Name:</span>
+          <input type = "text" name = "firstname" placeholder="Firstname" ><br>
+          <span id = "lname">Last Name:</span>
+          <input type = "text" name = "lastname" placeholder="Lastname" ><br>
+          <span id = "add">Address:</span>
+          <textarea placeholder="Address" ></textarea><br>
+          <div id="Gender"><br>
+          <span id = "gender">Gender:</span>
+          <br><input type="radio" name ="gender" value = "male">Male<br>
+          <input type="radio" name ="gender" value = "female">Female<br>
+          <input type="radio" name ="gender" value = "other">Other<br>
+        </div>
+        </fieldset>
+        <input type="submit" value="Submit" onclick="return validateForm();">
+      </Form>
+    </section>
+
+  </body>
+
+</html>
